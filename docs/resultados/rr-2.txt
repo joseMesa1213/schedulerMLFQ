@@ -1,0 +1,37 @@
+=== Configuracion (rr-2) ===
+Politica   : Round Robin
+Quantum    : 2
+Colas      : FIFO
+Procesos   : escenario integrado del enunciado (P1..P4)
+
+=== Metricas por proceso ===
+PID    Arrival  Burst  Start  Finish  Response  Turnaround  Waiting QFinal Demociones
+P1           0      8      0      22         0          22       14      0          0
+P2           1      4      2      12         1          11        7      0          0
+P3           2      9      4      26         2          24       15      0          0
+P4           3      5      8      23         5          20       15      0          0
+
+=== Promedios ===
+Response time promedio   : 2.00 ciclos
+Turnaround time promedio : 19.25 ciclos
+Waiting time promedio    : 12.75 ciclos
+Ciclos totales           : 26 (ociosos: 0)
+Uso de CPU               : 100.00%
+Throughput               : 0.1538 procesos/ciclo
+Cambios de contexto      : 13
+
+=== Eventos observados ===
+Despachos            : 13
+Quantums agotados    : 10
+Demociones           : 0
+Priority boosts      : 0
+Expropiaciones       : 9
+Procesos completados : 4
+
+=== Espera continua maxima (indicador de inanicion) ===
+P1    espera continua maxima:   6 ciclos (hasta el ciclo 14)
+P2    espera continua maxima:   6 ciclos (hasta el ciclo 10)
+P3    espera continua maxima:   6 ciclos (hasta el ciclo 12)
+P4    espera continua maxima:   6 ciclos (hasta el ciclo 16)
+
+Resultados exportados a 'docs/resultados/rr-2.csv'.

@@ -1,0 +1,5 @@
+# Archivo intencionalmente mal formado: sirve para demostrar la validacion
+# de entradas (mensaje claro con numero de linea, sin fallo silencioso).
+pid,arrival_time,burst_time
+1,0,8
+2,1,-4

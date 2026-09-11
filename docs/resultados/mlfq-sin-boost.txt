@@ -1,0 +1,40 @@
+=== Configuracion (mlfq-sin-boost) ===
+Politica   : MLFQ
+Niveles    : 3 (quantums: Q0=2 Q1=4 Q2=8)
+Boost      : desactivado
+Democion   : un nivel por vez
+Expropiar  : si
+Colas      : FIFO
+Procesos   : escenario integrado del enunciado (P1..P4)
+
+=== Metricas por proceso ===
+PID    Arrival  Burst  Start  Finish  Response  Turnaround  Waiting QFinal Demociones
+P1           0      8      0      23         0          23       15      2          2
+P2           1      4      2      14         1          13        9      1          1
+P3           2      9      4      26         2          24       15      2          2
+P4           3      5      6      21         3          18       13      1          1
+
+=== Promedios ===
+Response time promedio   : 1.50 ciclos
+Turnaround time promedio : 19.50 ciclos
+Waiting time promedio    : 13.00 ciclos
+Ciclos totales           : 26 (ociosos: 0)
+Uso de CPU               : 100.00%
+Throughput               : 0.1538 procesos/ciclo
+Cambios de contexto      : 10
+
+=== Eventos observados ===
+Despachos            : 10
+Quantums agotados    : 6
+Demociones           : 6
+Priority boosts      : 0
+Expropiaciones       : 6
+Procesos completados : 4
+
+=== Espera continua maxima (indicador de inanicion) ===
+P1    espera continua maxima:   9 ciclos (hasta el ciclo 21)
+P2    espera continua maxima:   8 ciclos (hasta el ciclo 12)
+P3    espera continua maxima:   8 ciclos (hasta el ciclo 14)
+P4    espera continua maxima:  10 ciclos (hasta el ciclo 18)
+
+Resultados exportados a 'docs/resultados/mlfq-sin-boost.csv'.

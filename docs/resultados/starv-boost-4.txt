@@ -1,0 +1,85 @@
+=== Configuracion (starv-boost-4) ===
+Politica   : MLFQ
+Niveles    : 3 (quantums: Q0=2 Q1=4 Q2=8)
+Boost      : cada S ciclos
+S          : 4 ciclos
+Democion   : un nivel por vez
+Expropiar  : si
+Colas      : FIFO
+Procesos   : archivo CSV 'examples/starvation.csv'
+
+=== Metricas por proceso ===
+PID    Arrival  Burst  Start  Finish  Response  Turnaround  Waiting QFinal Demociones
+P1           0     30      0      80         0          80       50      1         11
+P2           1      2      2       4         1           3        1      0          0
+P3           3      2      4       6         1           3        1      0          0
+P4           5      2      8      10         3           5        3      0          0
+P5           7      2     10      12         3           5        3      0          0
+P6           9      2     14      16         5           7        5      0          0
+P7          11      2     16      18         5           7        5      0          0
+P8          13      2     18      20         5           7        5      0          0
+P9          15      2     20      22         5           7        5      0          0
+P10         17      2     24      26         7           9        7      0          0
+P11         19      2     26      28         7           9        7      0          0
+P12         21      2     28      30         7           9        7      0          0
+P13         23      2     30      32         7           9        7      0          0
+P14         25      2     34      36         9          11        9      0          0
+P15         27      2     36      38         9          11        9      0          0
+P16         29      2     38      40         9          11        9      0          0
+P17         31      2     40      42         9          11        9      0          0
+P18         33      2     42      44         9          11        9      0          0
+P19         35      2     44      46         9          11        9      0          0
+P20         37      2     48      50        11          13       11      0          0
+P21         39      2     50      52        11          13       11      0          0
+P22         41      2     52      54        11          13       11      0          0
+P23         43      2     54      56        11          13       11      0          0
+P24         45      2     56      58        11          13       11      0          0
+P25         47      2     58      60        11          13       11      0          0
+P26         49      2     62      64        13          15       13      0          0
+
+=== Promedios ===
+Response time promedio   : 7.27 ciclos
+Turnaround time promedio : 12.27 ciclos
+Waiting time promedio    : 9.19 ciclos
+Ciclos totales           : 80 (ociosos: 0)
+Uso de CPU               : 100.00%
+Throughput               : 0.3250 procesos/ciclo
+Cambios de contexto      : 33
+
+=== Eventos observados ===
+Despachos            : 33
+Quantums agotados    : 11
+Demociones           : 11
+Priority boosts      : 19
+Expropiaciones       : 7
+Procesos completados : 26
+
+=== Espera continua maxima (indicador de inanicion) ===
+P1    espera continua maxima:  12 ciclos (hasta el ciclo 46)
+P2    espera continua maxima:   1 ciclos (hasta el ciclo 2)
+P3    espera continua maxima:   1 ciclos (hasta el ciclo 4)
+P4    espera continua maxima:   3 ciclos (hasta el ciclo 8)
+P5    espera continua maxima:   3 ciclos (hasta el ciclo 10)
+P6    espera continua maxima:   5 ciclos (hasta el ciclo 14)
+P7    espera continua maxima:   5 ciclos (hasta el ciclo 16)
+P8    espera continua maxima:   5 ciclos (hasta el ciclo 18)
+P9    espera continua maxima:   5 ciclos (hasta el ciclo 20)
+P10   espera continua maxima:   7 ciclos (hasta el ciclo 24)
+P11   espera continua maxima:   7 ciclos (hasta el ciclo 26)
+P12   espera continua maxima:   7 ciclos (hasta el ciclo 28)
+P13   espera continua maxima:   7 ciclos (hasta el ciclo 30)
+P14   espera continua maxima:   9 ciclos (hasta el ciclo 34)
+P15   espera continua maxima:   9 ciclos (hasta el ciclo 36)
+P16   espera continua maxima:   9 ciclos (hasta el ciclo 38)
+P17   espera continua maxima:   9 ciclos (hasta el ciclo 40)
+P18   espera continua maxima:   9 ciclos (hasta el ciclo 42)
+P19   espera continua maxima:   9 ciclos (hasta el ciclo 44)
+P20   espera continua maxima:  11 ciclos (hasta el ciclo 48)
+P21   espera continua maxima:  11 ciclos (hasta el ciclo 50)
+P22   espera continua maxima:  11 ciclos (hasta el ciclo 52)
+P23   espera continua maxima:  11 ciclos (hasta el ciclo 54)
+P24   espera continua maxima:  11 ciclos (hasta el ciclo 56)
+P25   espera continua maxima:  11 ciclos (hasta el ciclo 58)
+P26   espera continua maxima:  13 ciclos (hasta el ciclo 62)
+
+Resultados exportados a 'docs/resultados/starv-boost-4.csv'.

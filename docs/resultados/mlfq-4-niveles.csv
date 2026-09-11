@@ -1,0 +1,6 @@
+PID,Arrival,Burst,Start,Finish,Response,Turnaround,Waiting
+P1,0,8,0,23,0,23,15
+P2,1,4,2,14,1,13,9
+P3,2,9,4,26,2,24,15
+P4,3,5,6,21,3,18,13
+AVG,,,,,1.50,19.50,13.00

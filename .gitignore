@@ -1,0 +1,5 @@
+# Artefactos de compilacion (se regeneran con `make`)
+build/
+
+# Nota: results.csv y docs/resultados/ SI se versionan: el primero es la salida
+# exigida por el enunciado y los segundos son la evidencia del analisis.

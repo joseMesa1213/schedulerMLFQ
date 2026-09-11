@@ -1,0 +1,38 @@
+Aviso: la politica seleccionada usa una sola cola; se aplica el quantum 2.
+=== Configuracion (fcfs) ===
+Politica   : FCFS
+Quantum    : 2
+Colas      : FIFO
+Procesos   : escenario integrado del enunciado (P1..P4)
+
+=== Metricas por proceso ===
+PID    Arrival  Burst  Start  Finish  Response  Turnaround  Waiting QFinal Demociones
+P1           0      8      0       8         0           8        0      0          0
+P2           1      4      8      12         7          11        7      0          0
+P3           2      9     12      21        10          19       10      0          0
+P4           3      5     21      26        18          23       18      0          0
+
+=== Promedios ===
+Response time promedio   : 8.75 ciclos
+Turnaround time promedio : 15.25 ciclos
+Waiting time promedio    : 8.75 ciclos
+Ciclos totales           : 26 (ociosos: 0)
+Uso de CPU               : 100.00%
+Throughput               : 0.1538 procesos/ciclo
+Cambios de contexto      : 4
+
+=== Eventos observados ===
+Despachos            : 4
+Quantums agotados    : 0
+Demociones           : 0
+Priority boosts      : 0
+Expropiaciones       : 0
+Procesos completados : 4
+
+=== Espera continua maxima (indicador de inanicion) ===
+P1    espera continua maxima:   0 ciclos (hasta el ciclo 0)
+P2    espera continua maxima:   7 ciclos (hasta el ciclo 8)
+P3    espera continua maxima:  10 ciclos (hasta el ciclo 12)
+P4    espera continua maxima:  18 ciclos (hasta el ciclo 21)
+
+Resultados exportados a 'docs/resultados/fcfs.csv'.

@@ -1,0 +1,32 @@
+# Escenario para estudiar inanicion (starvation):
+# P1 es un proceso largo (burst=30) que compite contra una rafaga continua de
+# procesos cortos (burst=2) que llegan cada 2 ciclos y siempre entran por Q0.
+# Mientras la corriente de procesos cortos no se agote, P1 no vuelve a ejecutar
+# salvo que exista priority boost.
+# pid,arrival_time,burst_time
+1,0,30
+2,1,2
+3,3,2
+4,5,2
+5,7,2
+6,9,2
+7,11,2
+8,13,2
+9,15,2
+10,17,2
+11,19,2
+12,21,2
+13,23,2
+14,25,2
+15,27,2
+16,29,2
+17,31,2
+18,33,2
+19,35,2
+20,37,2
+21,39,2
+22,41,2
+23,43,2
+24,45,2
+25,47,2
+26,49,2

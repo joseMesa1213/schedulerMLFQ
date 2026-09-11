@@ -1,0 +1,82 @@
+Aviso: la politica seleccionada usa una sola cola; se aplica el quantum 2.
+=== Configuracion (starv-fcfs) ===
+Politica   : FCFS
+Quantum    : 2
+Colas      : FIFO
+Procesos   : archivo CSV 'examples/starvation.csv'
+
+=== Metricas por proceso ===
+PID    Arrival  Burst  Start  Finish  Response  Turnaround  Waiting QFinal Demociones
+P1           0     30      0      30         0          30        0      0          0
+P2           1      2     30      32        29          31       29      0          0
+P3           3      2     32      34        29          31       29      0          0
+P4           5      2     34      36        29          31       29      0          0
+P5           7      2     36      38        29          31       29      0          0
+P6           9      2     38      40        29          31       29      0          0
+P7          11      2     40      42        29          31       29      0          0
+P8          13      2     42      44        29          31       29      0          0
+P9          15      2     44      46        29          31       29      0          0
+P10         17      2     46      48        29          31       29      0          0
+P11         19      2     48      50        29          31       29      0          0
+P12         21      2     50      52        29          31       29      0          0
+P13         23      2     52      54        29          31       29      0          0
+P14         25      2     54      56        29          31       29      0          0
+P15         27      2     56      58        29          31       29      0          0
+P16         29      2     58      60        29          31       29      0          0
+P17         31      2     60      62        29          31       29      0          0
+P18         33      2     62      64        29          31       29      0          0
+P19         35      2     64      66        29          31       29      0          0
+P20         37      2     66      68        29          31       29      0          0
+P21         39      2     68      70        29          31       29      0          0
+P22         41      2     70      72        29          31       29      0          0
+P23         43      2     72      74        29          31       29      0          0
+P24         45      2     74      76        29          31       29      0          0
+P25         47      2     76      78        29          31       29      0          0
+P26         49      2     78      80        29          31       29      0          0
+
+=== Promedios ===
+Response time promedio   : 27.88 ciclos
+Turnaround time promedio : 30.96 ciclos
+Waiting time promedio    : 27.88 ciclos
+Ciclos totales           : 80 (ociosos: 0)
+Uso de CPU               : 100.00%
+Throughput               : 0.3250 procesos/ciclo
+Cambios de contexto      : 26
+
+=== Eventos observados ===
+Despachos            : 26
+Quantums agotados    : 0
+Demociones           : 0
+Priority boosts      : 0
+Expropiaciones       : 0
+Procesos completados : 26
+
+=== Espera continua maxima (indicador de inanicion) ===
+P1    espera continua maxima:   0 ciclos (hasta el ciclo 0)
+P2    espera continua maxima:  29 ciclos (hasta el ciclo 30)
+P3    espera continua maxima:  29 ciclos (hasta el ciclo 32)
+P4    espera continua maxima:  29 ciclos (hasta el ciclo 34)
+P5    espera continua maxima:  29 ciclos (hasta el ciclo 36)
+P6    espera continua maxima:  29 ciclos (hasta el ciclo 38)
+P7    espera continua maxima:  29 ciclos (hasta el ciclo 40)
+P8    espera continua maxima:  29 ciclos (hasta el ciclo 42)
+P9    espera continua maxima:  29 ciclos (hasta el ciclo 44)
+P10   espera continua maxima:  29 ciclos (hasta el ciclo 46)
+P11   espera continua maxima:  29 ciclos (hasta el ciclo 48)
+P12   espera continua maxima:  29 ciclos (hasta el ciclo 50)
+P13   espera continua maxima:  29 ciclos (hasta el ciclo 52)
+P14   espera continua maxima:  29 ciclos (hasta el ciclo 54)
+P15   espera continua maxima:  29 ciclos (hasta el ciclo 56)
+P16   espera continua maxima:  29 ciclos (hasta el ciclo 58)
+P17   espera continua maxima:  29 ciclos (hasta el ciclo 60)
+P18   espera continua maxima:  29 ciclos (hasta el ciclo 62)
+P19   espera continua maxima:  29 ciclos (hasta el ciclo 64)
+P20   espera continua maxima:  29 ciclos (hasta el ciclo 66)
+P21   espera continua maxima:  29 ciclos (hasta el ciclo 68)
+P22   espera continua maxima:  29 ciclos (hasta el ciclo 70)
+P23   espera continua maxima:  29 ciclos (hasta el ciclo 72)
+P24   espera continua maxima:  29 ciclos (hasta el ciclo 74)
+P25   espera continua maxima:  29 ciclos (hasta el ciclo 76)
+P26   espera continua maxima:  29 ciclos (hasta el ciclo 78)
+
+Resultados exportados a 'docs/resultados/starv-fcfs.csv'.
